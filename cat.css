@@ -1,0 +1,111 @@
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  margin-top: 100px;
+  background-color: rgb(115, 115, 221);
+  z-index: 1;
+  margin-left: 50px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.head::after {
+  background-color: rgb(115, 115, 221);
+  z-index: -1;
+  content: "";
+  height: 120px;
+  width: 80px;
+  left: -15px;
+  top: -10px;
+  position: absolute;
+  border: 2px solid transparent;
+  border-radius: 12% 80% 70% 30% / 20% 30% 70% 80%;
+}
+
+.head::before {
+  background-color: rgb(115, 115, 221);
+  content: "";
+  height: 120px;
+  width: 80px;
+  top: -10px;
+  position: absolute;
+  left: 130px;
+  border: 2px solid transparent;
+  border-radius: 80% 20% 30% 70% / 30% 20% 80% 70%;
+}
+
+.eyes {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50% / 50%;
+}
+
+.eyes::after {
+  position: absolute;
+  left: 100px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50% / 50%;
+}
+
+.nose {
+  content: "";
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50% / 20% 20% 80% 80%;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 110px;
+  left: 80px;
+}
+
+.nose::after {
+  content: "";
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  top: -73px;
+  left: -30px;
+  border: solid 3px transparent;
+  border-radius: 50%;
+  border-bottom-color: rgb(0, 0, 0);
+  display: block;
+  padding-top: 100%;
+}
+
+.nose::before{
+  content: "";
+  width: 50px;
+  height: 70px;  position: absolute;
+  left: 5px;
+  top: -73px;
+  border: solid 3px transparent;
+  border-radius: 50%;
+  border-bottom-color: rgb(0, 0, 0);
+  display: block;
+  padding-top: 100%;
+}
+
+/* .nose:hover > .pop{
+width: 20px;
+height: 300px;
+background-color: red;
+} */
