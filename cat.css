@@ -1,3 +1,9 @@
+:root {
+  --whiskersBorder: black solid 1px;
+  --whiskersWidth: 80px;
+
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -92,10 +98,11 @@ body {
   padding-top: 100%;
 }
 
-.nose::before{
+.nose::before {
   content: "";
   width: 50px;
-  height: 70px;  position: absolute;
+  height: 70px;
+  position: absolute;
   left: 5px;
   top: -73px;
   border: solid 3px transparent;
@@ -105,59 +112,61 @@ body {
   padding-top: 100%;
 }
 
-.whiskersLeft{
-  width: 80px;
-  border: black solid 1px;
+
+
+.whiskersLeft {
+  width: var(--whiskersWidth);
+  border: var(--whiskersBorder);
   position: absolute;
   top: 120px;
   left: -20px;
 }
 
-.whiskersLeft::after{
+.whiskersLeft::after {
   content: "";
   position: absolute;
   top: -12px;
-  border: black solid 1px;
-  width: 80px;
+  border: var(--whiskersBorder);
+  width: var(--whiskersWidth);
   transform: rotate(15deg);
 }
 
-.whiskersLeft::before{
+.whiskersLeft::before {
   content: "";
   position: absolute;
   top: 10px;
-  border: black solid 1px;
-  width: 80px;
+  border: var(--whiskersBorder);
+  width: var(--whiskersWidth);
   transform: rotate(-15deg);
 }
 
 
 
-.whiskersRight{
-  width: 80px;
-  border: black solid 1px;
+.whiskersRight {
+  width: var(--whiskersWidth);
+  border: var(--whiskersBorder);
   position: absolute;
   top: 120px;
   right: -20px;
 }
 
 
-.whiskersRight::after{
+.whiskersRight::after {
   content: "";
   position: absolute;
   top: -12px;
   right: 0;
-  border: black solid 1px;
-  width: 80px;
+  border: var(--whiskersBorder);
+  width: var(--whiskersWidth);
   transform: rotate(-15deg);
 }
 
-.whiskersRight::before{
+.whiskersRight::before {
   content: "";
   position: absolute;
   top: 10px;
   right: 0;
-  border: black solid 1px;
-  width: 80px;
+  border: var(--whiskersBorder);
+  width: var(--whiskersWidth);
   transform: rotate(15deg);
 }
